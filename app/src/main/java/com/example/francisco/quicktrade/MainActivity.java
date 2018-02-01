@@ -38,6 +38,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if (v.getId() == R.id.btnVerUser) {
                     Intent i = new Intent(this, VerUser.class);
                     startActivity(i);
+                } else {
+                    if (v.getId() == R.id.btnVerProductos) {
+                        Intent i = new Intent(this, Productos.class);
+                        startActivity(i);
+                    }
                 }
             }
         }

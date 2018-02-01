@@ -18,7 +18,10 @@
         </activity>
         <activity android:name=".Registrar" />
         <activity android:name=".ModUser" />
-        <activity android:name=".VerUser"></activity>
+        <activity android:name=".VerUser" />
+        <activity android:name=".MisProductos" />
+        <activity android:name=".Productos" />
+        <activity android:name=".Registro_Login"></activity>
     </application>
 
 </manifest>
