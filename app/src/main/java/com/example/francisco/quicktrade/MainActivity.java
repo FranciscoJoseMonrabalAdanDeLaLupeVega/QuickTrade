@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private Button registrar, verUsuario, modUsuario;
+    private Button registrar, verUsuario, modUsuario, verProductos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,10 +18,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         registrar = (Button) findViewById(R.id.btnRegistrar);
         verUsuario = (Button) findViewById(R.id.btnModUser);
         modUsuario = (Button) findViewById(R.id.btnVerUser);
-
+        verProductos = (Button) findViewById(R.id.btnVerProductos);
         registrar.setOnClickListener(this);
         verUsuario.setOnClickListener(this);
         modUsuario.setOnClickListener(this);
+        verProductos.setOnClickListener(this);
+
     }
 
     @Override

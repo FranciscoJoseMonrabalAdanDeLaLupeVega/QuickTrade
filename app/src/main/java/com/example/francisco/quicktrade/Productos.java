@@ -23,6 +23,7 @@ public class Productos extends AppCompatActivity implements View.OnClickListener
     private ArrayAdapter<String> adapter;
     private ArrayList<String> productosList;
     private Button btnMisProductos;
+    private Producto producto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +43,7 @@ public class Productos extends AppCompatActivity implements View.OnClickListener
 
                 for (DataSnapshot dataSnapshot1: dataSnapshot.getChildren()) {
 
-                    Producto producto = dataSnapshot1.getValue(Producto.class);
+                    producto = dataSnapshot1.getValue(Producto.class);
                     productosList.add(producto.getName());
 
                     adapter = new ArrayAdapter<String>(Productos.this, android.R.layout.simple_list_item_1, productosList);
